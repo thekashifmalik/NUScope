@@ -19,8 +19,8 @@ void reset();
 int SendIndex;
 int Done = 1;
 //Parameters
-int Frequency = 10;
-int Limit = 50;
+int Frequency = 200;
+int Limit = 100;
 
 
 int main(void)
@@ -47,7 +47,7 @@ void reset()
 
 void __ISR(_TIMER_2_VECTOR, ipl3) Send(void)
 {
-    SendCharacter(1, '1');
+    SendString(1, "1000\n");
     SendIndex++;
     if (SendIndex == Limit)
     {
