@@ -2,3 +2,4 @@ Thumbs.db
 *.o
 *.hex
 *.elf
+*.d

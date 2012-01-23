@@ -15,7 +15,6 @@ void initialize()
     initializeAnalogIn();
 }
 
-//currently set to RB2
 void initializeAnalogIn()
 {
 }

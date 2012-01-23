@@ -74,14 +74,14 @@ int setupUart(int id, int int_priotity_level_X) {
   UARTSetDataRate(uartX, pbClk, DESIRED_BAUDRATE_NU32);
   UARTEnable(uartX, UART_ENABLE_FLAGS(UART_PERIPHERAL | UART_RX | UART_TX));
 
-  // Configure UART1 RX Interrupt
+  // Configure UART RX Interrupt
   INTEnable(int_uXrx, INT_ENABLED);
   INTSetVectorPriority(int_uart_X_vector, int_priotity_level_X);
   INTSetVectorSubPriority(int_uart_X_vector, INT_SUB_PRIORITY_LEVEL_0);
+
   return 1;
 }
 
-// Put a character over the serial port, called by WriteString
 int SendCharacter(int id, const char character)
 {
     UART_MODULE uartX;

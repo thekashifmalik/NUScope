@@ -11,6 +11,6 @@ void initializePWM();
 void initializeTimers();
 void initializeUart();
 
-int setupTimer(int timer, int frequency, int priority);
+
 
 #endif
