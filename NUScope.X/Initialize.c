@@ -40,4 +40,5 @@ void initializeTimers()
 
 void initializeUart()
 {
+    setupUart(1, 2);
 }
