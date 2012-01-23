@@ -19,6 +19,8 @@ void initializeAnalogIn()
 {
 }
 
+
+
 void initializePic()
 {
     SYSTEMConfig(SYS_FREQ, SYS_CFG_ALL);
