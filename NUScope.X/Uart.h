@@ -21,6 +21,8 @@ void __ISR(_UART_1_VECTOR, ipl2) IntUart1Handler(void)
 {
     if(INTGetFlag(INT_SOURCE_UART_RX(UART1)))
     {
+        char data = UARTGetDataByte(UART1);
+
         INTClearFlag(INT_SOURCE_UART_RX(UART1));
     }
 
