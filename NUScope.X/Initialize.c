@@ -15,12 +15,6 @@ void initialize()
     initializeAnalogIn();
 }
 
-void initializeAnalogIn()
-{
-}
-
-
-
 void initializePic()
 {
     SYSTEMConfig(SYS_FREQ, SYS_CFG_ALL);
@@ -42,5 +36,11 @@ void initializeTimers()
 
 void initializeUart()
 {
-    setupUart(1, 2);
+setupUart(1, 2);
+
+}
+
+void initializeAnalogIn()
+{
+    
 }
